@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <style type="text/css">
+   BODY {
+    background: url(bacg.png) 1910px 1080px ; /* Параметры фона */
+   }
+   ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+   }
+   li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+   A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */}
+   
+	.RSUE { 
+	border-radius: 10px;
+    width: 1900px; 
+	height: 200px;
+    background: #116;
+    float: center;}
+	
+	.window { 
+	opacity:67%;
+	text-align:center;
+    width: 700px; 
+	height: 400px;
+    background: white;
+    margin: auto;
+	margin-top: 5%;
+	border-radius: 15px;
+	transform: translate(400px,50px);
+    }
+	
+	.login { 
+    padding-top: 30px; 
+    }
+	
+	.password { 
+	padding-top: 16px; 
+    }
+	
+	.BUT3 { 
+	color: white;
+	font-size: 9pt;
+	text-align:center;
+    width: 80px; 
+	height: 30px;
+    background: blue;
+    margin: auto;
+	margin-top: 10%;
+	border-radius: 15px;
+    }
+	
+	.PNG { 
+    width: 100px; 
+	height: 40px;
+	padding: 5px;
+    padding-right: 150px;
+    padding-left: 50px;	
+	transform: translate(-30px,-35px);
+    float: left;}
+	
+	.PNG1 { 
+    width: 100px; 
+	height: 40px;
+	padding: 5px;
+    padding-right: 150px;
+    padding-left: 50px;	
+	transform: translate(-225px,250px);
+    float: left;}
+	
+	.TEXT { 
+	font-size: 20px;
+    width: 500px; 
+	height: 40px;
+    padding: 50px;
+    padding-right: 20px; 
+	text-shadow: 
+		-0   -4px 0   #000000,
+		 0   -4px 0   #000000,
+		-0    4px 0   #000000,
+		 0    4px 0   #000000,
+		-4px -0   0   #000000,
+		 4px -0   0   #000000,
+		-4px  0   0   #000000,
+		 4px  0   0   #000000,
+		-1px -4px 0   #000000,
+		 1px -4px 0   #000000,
+		-1px  4px 0   #000000,
+		 1px  4px 0   #000000,
+		-4px -1px 0   #000000,
+		 4px -1px 0   #000000,
+		-4px  1px 0   #000000,
+		 4px  1px 0   #000000,
+		-2px -4px 0   #000000,
+		 2px -4px 0   #000000,
+		-2px  4px 0   #000000,
+		 2px  4px 0   #000000,
+		-4px -2px 0   #000000,
+		 4px -2px 0   #000000,
+		-4px  2px 0   #000000,
+		 4px  2px 0   #000000,
+		-3px -4px 0   #000000,
+		 3px -4px 0   #000000,
+		-3px  4px 0   #000000,
+		 3px  4px 0   #000000,
+		-4px -3px 0   #000000,
+		 4px -3px 0   #000000,
+		-4px  3px 0   #000000,
+		 4px  3px 0   #000000,
+		-4px -4px 0   #000000,
+		 4px -4px 0   #000000,
+		-4px  4px 0   #000000,
+		 4px  4px 0   #000000,
+		-4px -4px 0   #000000,
+		 4px -4px 0   #000000,
+		-4px  4px 0   #000000,
+		 4px  4px 0   #000000;
+	transform: translate(-300px,-5px);
+    float: left;}
+	
+	.BUT2 { 
+	font-size: 20px;
+	margin-top: 2%;
+    padding: 20px;
+	padding-right: 70px;
+    float: right;}
+
+  </style> 
+<head>
+<title>ВКР РГЭУ(РИНХ)</title>
+</head>
+
+
+<body>
+
+<div class="header">
+<div class="RSUE">
+<div class="PNG">
+<a href="main.html"><img height=250 width=250 src="1652708091756.png"></a>
+</div>
+<div class="PNG1">
+<a href="main.html"><img height=600 width=800 src="Humaaans - 3 Characters.png"></a>
+</div>
+<div class="TEXT">
+<font color="yellow"><h1>ВКР РГЭУ "РИНХ"</h1></font>
+</div>
+<div class="BUT2">
+<ul class="hr">
+<li>
+<a href="https://rsue.ru/"><font color="white"><h4>Официальный сайт</h4></font></a>
+</li>
+</ul>
+</div>
+</div>
+
+<form id="auth" action="check.php" method="post"></form>
+
+<div class="window">
+<div class="login">
+<font align="center"><h2>Логин</h2></font>
+<input name="user" type="text" size="40" form="auth">
+</div>
+<div class="password">
+<font align="center"><h2>Пароль</h2></font>
+<input name="pass" type="password" size="40" form="auth">
+</div>
+<button name="butt" type="submit" class="BUT3" value="Войти" form="auth">Войти</button>
+</div>
+
+
+
+
+</body>
+
+
+</html>
