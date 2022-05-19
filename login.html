@@ -41,8 +41,7 @@
     margin: auto;
 	margin-top: 5%;
 	border-radius: 15px;
-	transform: translate(400px,50px);
-    }
+	transform: translate(400px,50px);}
 	
 	.login { 
     padding-top: 30px; 
@@ -74,13 +73,24 @@
     float: left;}
 	
 	.PNG1 { 
-    width: 100px; 
-	height: 40px;
-	padding: 5px;
-    padding-right: 150px;
-    padding-left: 50px;	
-	transform: translate(-225px,250px);
-    float: left;}
+	position: relative;
+    width: 0px; 
+    bottom: -250px; /* Положение от нижнего края */
+    left: -150px;
+    float: left;
+	animation-name: png;
+	animation-duration: 2s;
+	animation-interation-count:1;
+	}
+	
+	@keyframes png{
+	0%{
+		left: -500px;
+	}
+	100%{
+		left: -150px;
+	}
+	}
 	
 	.TEXT { 
 	font-size: 20px;
@@ -129,7 +139,7 @@
 		 4px -4px 0   #000000,
 		-4px  4px 0   #000000,
 		 4px  4px 0   #000000;
-	transform: translate(-300px,-5px);
+	transform: translate(-20px,-5px);
     float: left;}
 	
 	.BUT2 { 
@@ -153,7 +163,7 @@
 <a href="main.html"><img height=250 width=250 src="1652708091756.png"></a>
 </div>
 <div class="PNG1">
-<a href="main.html"><img height=600 width=800 src="Humaaans - 3 Characters.png"></a>
+<a href="main.html"><img height=600 width=800 src="Big_Shoes_-_Torso_1.png"></a>
 </div>
 <div class="TEXT">
 <font color="yellow"><h1>ВКР РГЭУ "РИНХ"</h1></font>

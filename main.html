@@ -24,12 +24,14 @@
    } 
    A:hover { 
     text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */}
+	
    .RSUE { 
     border-radius: 10px;
     width: 1900px; 
 	height: 125px;
     background: #116;
     float: center;}
+	
 	.PNG { 
     width: 90px; 
 	height: 90px;
@@ -39,14 +41,29 @@
 	margin-top: 5px;
 	transform: translate(-30px,-25px);
     float: left;}
+	
 	.PNG1 { 
-    width: 100px; 
-	height: 40px;
-	padding: 300px;
-    padding-right: 5px;
-    padding-left: 10px;	
-	transform: translate(-75px,-40px);
-    float: left;}
+	position: relative;
+    width: 0px; 
+	height: -200px;
+    bottom: -150px; /* Положение от нижнего края */
+    left: -200px;
+    float: left;
+	
+	animation-name: png;
+	animation-duration: 2s;
+	animation-interation-count:1;
+	}
+	
+	@keyframes png{
+	0%{
+		left: -600px;
+	}
+	100%{
+		left: -200px;
+	}
+	}
+	
 	.TEXT { 
 	font-size: 20px;
     width: 500px; 
@@ -96,19 +113,36 @@
 		-4px  4px 0   #000000,
 		 4px  4px 0   #000000;
     float: left;}
+	
 		.TEXT1 { 
 	font-size: 20px;
 	position: absolute; /* Абсолютное позиционирование */
-    bottom: 300px; /* Положение от нижнего края */
-    right: 250px;
+    bottom: 225px; /* Положение от нижнего края */
+    right: 200px;
 	text-shadow: 1px 2px 3px #000;
-    float: left;}
+    float: left;
+	
+	animation-name: text;
+	animation-duration: 2s;
+	animation-interation-count:1;
+	}
+	
+	@keyframes text{
+	0%{
+		right: 0;
+	}
+	100%{
+		right: 200px;
+	}
+	}
+	
 	.BUT2 { 
 	font-size: 20px;
 	margin-top: 2%;
     padding: 20px;
 	padding-right: 70px;
     float: right;}
+	
 	.BUT1 { 
 	font-size: 20px;
 	margin-top: 2%;
@@ -129,16 +163,23 @@
 <a href="main.html"><img height=150 width=150 src="1652708091756.png"></a>
 </div>
 <div class="PNG1">
-<img height=500 width=500 src="Big Shoes - Torso.png">
+<img height=750 width=750 src="Big Shoes - Torso.png">
 </div>
 <div class="TEXT">
 <font color="yellow"><h1>ВКР РГЭУ "РИНХ"</h1></font>
 </div>
 <div class="TEXT1">
-<font color = "white"><h3>Уникальная система ВКР РГЭУ(РИНХ) позволяет создавать собственную<br> структуру размещения и хранения работ, <br>осуществлять настройки доступа сотрудников, устанавливать пределы допустимых<br> заимствований и цитирований с учетом индивидуальных особенностей высшего<br> учебного заведения.
-<br>Вы сможете получать полные детализированные отчеты в разрезе<br> подразделений и сотрудников учебного заведения, которые<br> будут востребованы при проверках.
-<br> Все работы хранятся в специальном зашифрованном формате,<br> мы гарантируем их защиту и соблюдение авторских прав!
-</h3></font>
+<font color = "white"><h2>Уникальная система ВКР РГЭУ(РИНХ) позволяет создавать 
+<br>собственную структуру размещения и хранения работ, 
+<br>осуществлять настройки доступа сотрудников, устанавливать 
+<br>пределы допустимых заимствований и цитирований с учетом 
+<br>индивидуальных особенностей высшего учебного заведения.
+<br>Вы сможете получать полные детализированные отчеты в разрезе
+<br> подразделений и сотрудников учебного заведения, которые
+<br> будут востребованы при проверках.
+<br> Все работы хранятся в специальном зашифрованном формате,
+<br> мы гарантируем их защиту и соблюдение авторских прав!
+</h2></font>
 </div>
 <div class="BUT1">
 <ul class="hr">
