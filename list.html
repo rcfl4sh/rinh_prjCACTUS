@@ -20,6 +20,7 @@
 
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="spisok.js"></script>
+<script type="text/javascript" src="dow.js"></script>
 </head>
 
 
@@ -78,7 +79,7 @@
 <div class="window">
 <div class="spis">
 <p><b>Год защиты</b></p>
-<select class="A" placeholder="Год защиты" id="type">
+<select name="A" class="A" placeholder="Год защиты" id="A">
 <option value="0">2017</option>
 <option  value="1">2018</option>
 <option  value="2">2019</option>
@@ -91,7 +92,7 @@
 
 <div class="spis">
 <p><b>Уровень образования</b></p>
-<select class="B" placeholder="Уровень образования" id="type">
+<select class="B" placeholder="Уровень образования" id="B" >
 <option value="0">Бакалавриат</option>
 <option  value="1">Специалитет</option>
 <option  value="2">Магистратура</option>
@@ -101,17 +102,18 @@
 
 <div class="spis">
 <p><b>Код и наименование ООП</b></p>
-<select class="C" placeholder="Код и наименование ООП" id="type">
+<select class="C" placeholder="Код и наименование ООП" id="C" >
 </select>
 </div>
 
 <div class="spis">
 <p><b>ВКР и отзыв</b></p>
-<select class="D" placeholder="ВКР и отзыв" id="type">
+<select class="D" placeholder="ВКР и отзыв">
 </select>
 </div>
-
+<input type="button" id="elem" value="Скачать файл"  name="">
 </div>
+
 
 
 </body>
