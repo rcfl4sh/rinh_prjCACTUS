@@ -1,0 +1,76 @@
+footer, section{
+	padding: 70px 0;
+}
+body{
+background: rgb(235,241,246);
+background: -moz-linear-gradient(left,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 51%, rgba(213,235,251,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 51%,rgba(213,235,251,1) 100%);
+background: linear-gradient(to right,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 51%,rgba(213,235,251,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=1 );
+
+}
+header{
+	0px auto;
+}
+
+.text{
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+
+
+.text1{
+	text-align: justify;
+	color: #0e1060;
+	font-size: 15pt;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.png{
+	max-width: 65px;
+}
+
+.color{
+	color: #000000;
+}
+
+.but{
+	margin: auto 50px auto 50px;
+}
+
+.btn-itd{
+	display: block;
+	max-width: 200px;
+	margin: 80px auto 20px;
+	padding: 8px 20px;
+	color: var(--bs-white);
+	background-color: #0e1060; 
+}
+
+.btn-itd:hover{
+	color: var(--bs-white);
+	background-color: #59c1db; 
+}
+
+/*О сайте картинка*/
+.itd_img{
+	max-width: 260px;
+	right: 100px;
+}
+
+/* Цвет */
+
+
+.color{
+	background: #0e1060;
+}
+
+.color1{
+	border: 1px solid #0e1060;
+	background: #0e1060;
+}
+
+.color1:hover{
+	border: 1px solid #0e1060;
+	background: #252850;
+}

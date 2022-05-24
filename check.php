@@ -5,6 +5,6 @@
 	$uss = mysqli_fetch_array($us);
 	$pss = mysqli_fetch_array($ps);
 	if (($_POST['user']==$uss[0]) and ($_POST['pass']==$pss[0]))
-	{include('list.html');}
-	else {include('main.html');}
+	{include('D:\Новая папка (4)\open server\OSPanel\domains\project.ru\html\list.html');}
+	else {include('D:\Новая папка (4)\open server\OSPanel\domains\project.ru\html\main.html');}
 ?>

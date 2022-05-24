@@ -1,0 +1,78 @@
+footer, section{
+	padding: 50px 0;
+}
+body{
+	height: 100%
+background: rgb(235,241,246);
+background: -moz-linear-gradient(left,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 51%, rgba(213,235,251,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 51%,rgba(213,235,251,1) 100%);
+background: linear-gradient(to right,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 51%,rgba(213,235,251,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=1 );
+
+}
+
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+   }
+   li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+   A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */}
+   
+
+.but{
+	margin: auto 50px auto 20px;
+}
+	.png{
+	max-width: 65px;
+	}
+	.login { 
+    padding-top: 30px; 
+    }
+	
+	.password { 
+	padding-top: 16px; 
+    }
+	
+	.color{
+	border: 1px solid #0e1060;
+	background: #0e1060;
+}
+ .full{
+	height: 100%;
+ }
+
+	.BUT3 { 
+	color: white;
+	font-size: 15pt;
+	text-align:center;
+    width: 100px; 
+	height: 40px;
+    background: blue;
+    margin: auto;
+	margin-top: 10%;
+	border-radius: 15px;
+    }
+	
+.but{
+	margin: auto 50px auto 50px;
+}
+
+.color1{
+	border: 1px solid #0e1060;
+	background: #0e1060;
+}
+
+.color1:hover{
+	border: 1px solid #0e1060;
+	background: #252850;
+}

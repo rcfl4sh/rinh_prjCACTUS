@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<link type="image/x-icon" rel="shortcut icon" href="..\img\favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="..\css\bootstrap.min.css">
+  <link rel="stylesheet" href="..\css\stylelogin.css">
+  <title>ВКР РГЭУ</title>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark color">
+  <div class="container-fluid" bis_skin_checked="1">
+    <a href="..\html\main.html"><img class = "png" src = "https://rsue.ru/bitrix/templates/info_light_blue/img/logo.svg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01" bis_skin_checked="1">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link but" href="https://rsue.ru" target="_blank">Официальный сайт</a>
+        </li>
+		    <li class="nav-item">
+          <a class="nav-link" href="..\html\main.html">О нас</a>
+        </li>
+      </ul>
+       
+		</nav>
+        </div>
+      </div>
+    </div>
+
+</head>
+
+<body>
+
+<div class="row"></div>
+	<div class ="col-xs-12 col-sm-9 col-md-4 col-mg-6"></div>
+
+  <section>
+  
+    <div class="container full">
+	  <div class = "row">
+	  <div class = "col-3"></div>
+	  <div class = "col-6 align-self-center text1">
+<form id="auth" action="..\check.php" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Логин</label>
+    <input name="user" type="l" class="form-control line" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input name="pass" type="password" class="form-control line" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary color" value="Войти">Войти</button>
+</form>
+	</div>
+	<div class = "col-3"></div>
+	</div>
+
+</div>
+
+  <script src = "..\js\bootstrap.bundle.min.js"></script>
+  
+</body>
+
+</html>
