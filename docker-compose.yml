@@ -1,0 +1,71 @@
+version: '3'
+
+networks:
+  backend:
+
+services:
+
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    ports:
+      - "${NGINX_PORT}:80"
+    volumes:
+      - ./projects:/var/www
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx/
+    depends_on:
+      - php-7.3
+      - mysql-8
+    environment:
+      TZ: ${WORKSPACE_TIMEZONE}
+    networks:
+      - backend
+
+
+  mysql-8:
+    image: mysql:8.0.21
+    command: --default-authentication-plugin=mysql_native_password --skip_name_resolve
+    container_name: mysql-8
+    restart: unless-stopped
+    volumes:
+      - ./mysql-8/data:/var/lib/mysql
+      - ./mysql-8/conf.d:/etc/mysql/conf.d
+      - ./mysql-8/logs:/var/log/mysql/
+      - ./mysql-8/dump:/dump
+    ports:
+      - "${MYSQL_8_PORT}:3307"
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      TZ: ${WORKSPACE_TIMEZONE}
+    networks:
+      - backend
+
+
+
+  php-7.3:
+    build:
+      context: php-7-workspace
+      dockerfile: Dockerfile
+      args:
+        DOCKER_PHP_VERSION: '7.3'
+        DOCKER_PHP_ENABLE_XDEBUG: ${DOCKER_PHP_ENABLE_XDEBUG}
+        TZ: ${WORKSPACE_TIMEZONE}
+    working_dir: /var/www
+    container_name: php-7.3
+    volumes:
+      - ./.ssh:/home/www-data/.ssh
+      - ./projects:/var/www
+      - ./php-ini/7.3/php.ini:/usr/local/etc/php/php.ini
+      - ./php-workers/7.3/supervisor.d:/etc/supervisor.d
+    ports:
+      - "${PHP_7_3_PORT}:9000"
+    networks:
+      - backend
+    extra_hosts:
+      - 'project-1.localhost:192.168.65.2'
+      - 'project-2.localhost:192.168.65.2'
+      - 'project-3.localhost:192.168.65.2'
